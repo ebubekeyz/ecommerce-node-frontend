@@ -90,7 +90,7 @@ registerSubmit.addEventListener('click', async (e) => {
     try {
       registerSubmit.innerHTML = `<div class="loading"></div>`;
       const response = await fetch(
-        `http://localhost:4300/ecommerce-node-6onb/api/v1/auth/register`,
+        `https://ecommerce-node-frontend.onrender.com/ecommerce-node-6onb/api/v1/auth/register`,
         {
           method: 'POST',
           headers: {
@@ -142,7 +142,7 @@ registerSubmit.addEventListener('click', async (e) => {
     try {
       loginSubmit.innerHTML = `<div class="loading"></div>`;
       const response = await fetch(
-        `http://localhost:4300/ecommerce-node-6onb/api/v1/auth/login`,
+        `https://ecommerce-node-frontend.onrender.com/ecommerce-node-6onb/api/v1/auth/login`,
         {
           method: 'POST',
           headers: {

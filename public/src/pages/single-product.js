@@ -107,7 +107,7 @@ const logout = getElement('.logout');
 
 logout.addEventListener('click', async () => {
     try{
-      const response = await fetch('http://localhost:4300/ecommerce-node-6onb/api/v1/auth/logout',{
+      const response = await fetch('https://ecommerce-node-frontend.onrender.com/ecommerce-node-6onb/api/v1/auth/logout',{
         method: 'GET',
         headers: {
           "Content-Type": "application/json"

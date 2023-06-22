@@ -3,9 +3,9 @@
 //   DATA IS THE SAME JUST A DIFFERENT URL,
 //   DOES NOT AFFECT PROJECT FUNCTIONALITY
 
-const allProductsUrl = 'http://localhost:4300/ecommerce-node-6onb/api/v1/products'
+const allProductsUrl = 'https://ecommerce-node-frontend.onrender.com/ecommerce-node-6onb/api/v1/products'
 
-const singleProductUrl = 'http://localhost:4300/ecommerce-node-6onb/api/v1/products'
+const singleProductUrl = 'https://ecommerce-node-frontend.onrender.com/ecommerce-node-6onb/api/v1/products'
 
 const getElement = (selection) => {
   const element = document.querySelector(selection)

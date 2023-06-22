@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home | Comfy</title>
+  </head>
+  <body class="container">
+    <nav class="navbar">
+      <div class="nav-center">
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="/" class="nav-link">home</a>
+            </li>
+            <li>
+              <a href="/products" class="nav-link">products</a>
+            </li>
+            <!-- <li>
+              <a href="about.html" class="nav-link">about</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <img src="./images/logo-white.svg" class="nav-logo" alt="logo" />
+
+        <div class="toggle-container">
+          <span class="auth-reg nav-reg nav-hide">Register</span>
+          <span class="logout nav-hide">Logout</span>
+
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart nav-hide"></i>
+          </button>
+          <button class="btn buy-now nav-hide">buy Now</button>
+          <span class="cart-item-count nav-hide">0</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- login -->
+    <section class="login-section">
+      <div class="alert"></div>
+      <div class="section-center login-center">
+        <form class="form">
+          <h2 class="text-slanted login-text">Login</h2>
+          <div class="email">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              class="form-group"
+            />
+          </div>
+          <div class="password">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" class="form-group" />
+          </div>
+          <div class="submit">
+            <button type="submit" id="login-submit" class="btn log-btn">
+              login
+            </button>
+            <p class="auth-reg">Register, If you dont have an account</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- register -->
+    <section class="register-section">
+      <div class="alert"></div>
+      <div class="section-center login-center">
+        <form class="form">
+          <h2 class="text-slanted login-text">Register</h2>
+          <div class="name">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              placeholder="Name"
+              id="name"
+              class="form-group"
+            />
+          </div>
+          <div class="email">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              id="reg-email"
+              class="form-group"
+            />
+          </div>
+          <div class="password">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="reg-password" class="form-group" />
+          </div>
+          <div class="submit">
+            <button type="submit" id="register-submit" class="btn reg-btn">
+              register
+            </button>
+            <!-- <div class="loading"></div> -->
+            <p class="auth-log">Login, if you already have an account</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="text-slanted">quality Clothes</h1>
+        <h3>Embrace your choices - At affordable price</h3>
+        <a href="products.html" class="hero-btn">shop now</a>
+        <div class="auth">
+          <span class="hero-btn login auth-log">Login</span>
+          <span class="hero-btn register auth-reg">register</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- sidebar -->
+
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>
+              home
+            </a>
+          </li>
+
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>
+              products
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"></i>
+              about
+            </a>
+          </li> -->
+        </ul>
+      </aside>
+    </div>
+
+    <!-- cart -->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items"></div>
+
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">total: $12.99</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
